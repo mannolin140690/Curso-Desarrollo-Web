@@ -1,5 +1,6 @@
 var contador=0;
 var ini;
+initLocation();
 
 function cargador(){
     var lienzo=document.getElementById("lienzo");
@@ -23,7 +24,6 @@ function cargador(){
     lienzo1.fillText("Hola Mundo!",70,350);
     
     iniciaAnim();
-
 }
 function iniciaAnim(){
     ini= setInterval(dibujar,20);
@@ -71,4 +71,39 @@ function retornarLienzo(x){
         return false;
     }
 }
+
+
+/*Mapas*/
+function initLocation(){
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(googleMapIt, gestionaErrores);
+    }
+    else{
+        alert("Tu navegador no soporta geolocalizacion");
+    }
+}
+
+function googleMapIt(p){
+    var latitud= p.coords.latitude;
+    var longitud= p.coords.longitude;
+
+    var detalle = 'latitud:' + latitud + 'longitud: '+ longitud;
+    console.log('Te encuentras en las coordenadas:_' + detalle);
+    var map='https://maps.google.com/maps?&z=15&output=embed&ll='+latitud +','+longitud;
+
+    document.getElementById('geoMap').src=map;
+}
+
+function gestionaErrores(err){
+    if(err.code==0)
+        alert("Error desconocido");
+    if(err.code==1)
+        alert("No has permitido compartir tu ubicacion");
+    if(err.code==2)
+        alert("No es posible leer tu ubicación, quizas no estas en un sitio seguro");
+    if(err.code==3)
+        alert("Timeout.. Tiempo de espera agotado");
+
+}
+
 
