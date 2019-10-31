@@ -203,3 +203,16 @@ h4,p{
         box-shadow:30px 30px 10px red;
     }
 }
+
+#esfera{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    transition:all;
+    -webkit-transition:all;
+    -moz-transition:all;
+
+
+}
