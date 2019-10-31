@@ -49,7 +49,7 @@ function update(){
         esfera.position.x=w-100;
     }
 
-    if(esfera.position.x< 0 && esfera.velocity.x>0){
+    if(esfera.position.x< 0 && esfera.velocity.x<0){
         esfera.position.x=0;
     }
 
@@ -57,7 +57,7 @@ function update(){
         esfera.position.y=h-100;
     }
 
-    if(esfera.position.y< 0 && esfera.velocity.y>0){
+    if(esfera.position.y< 0 && esfera.velocity.y<0){
         esfera.position.y=0;
     }
 
