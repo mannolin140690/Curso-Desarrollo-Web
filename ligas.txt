@@ -1,0 +1,16 @@
+Ligas
+
+https://schema.org/
+https://html5test.com/
+https://www.colorzilla.com/gradient-editor/
+https://www.hexcolortool.com/
+https://fonts.google.com/
+https://webdesigner.withgoogle.com/
+https://www.sencha.com/
+https://www.adobe.com/mx/creativecloud 
+https://tumult.com/hype/
+http://cheatsheetworld.com/programming/html5-canvas-cheat-sheet/
+
+
+https://d3js.org/
+

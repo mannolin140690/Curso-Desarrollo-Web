@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vao Futbol Team!  </title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/index-listener.js"></script>
+        <script src="js/index-functions.js"></script>
+    </head>
+    <body onload="cargador()">
+        <header>
+            <h1>Vao Futbol Team</h1>            
+        </header>
+        <nav>
+            <ul>
+                <li>Inicios</li>
+                <li>Resultados</li>
+                <li>Formar parte del equipo</li>
+                <li>Contáctanos</li>
+                <li>Fotos y videos</li>
+                
+            </ul>
+        </nav>
+        <aside>
+            <details>
+                <summary>Goleadores de la semana</summary>
+                <ul>
+                    <li>Moises Rivero</li>
+                    <li>Hector</li>
+                    <li>Chepe</li>
+                </ul>
+            </details>
+
+            <h3>Redes sociales</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </aside>
+        <section>
+            <h2> Bienvenidos al sitio de Vao Futbol Team</h2>
+            <article> <!-- -->
+                <h3>Resultados último juego</h3>
+                <h4>Publicado el <time datetime="2019-10-30"> 30 de octubre de 2019</time></h4> <!-- ejemplo de microdato de tiempo-->
+                <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).</p>
+            </article>
+            <article>
+                <h3>Resultados jornada 1</h3>
+                <h4>Publicado el <time datetime="2019-10-02"> 02 de octubre de 2019</time></h4>
+                <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).</p>
+            </article>
+            <article>
+                <h3>Input types</h3>
+                <form method="POST" action="#">
+                    Nombre: <input type="text" placeholder="Por ej. Manuel Loaeza"> <br/>
+                    Correo: <input type="email" placeholder="email@domain.com"> <br/>
+                    URL linkedIn: <input type="url" placeholder="http://linkedin.com/user"><br>
+                    Edad: <input type="number" min="18" max="99" value="20" step="2"><br>
+                    Nivel de ingles: <input type="range" min="0" max="100" step="10" value="60"><br>
+                    Fecha de nacimiento: <input type="date"><br>
+                    Mes de vacaciones: <input type="month"><br>
+                    Semana de vacaciones: <input type="week"><br>
+                    Hora de entrada al trabajo: <input type="time"><br>
+                    Color de playera:<input type="color"><br>
+                    Contraseña:<input type="password"><br>
+                    Telefono: <input type="tel"><br>
+                    Busqueda: <input type="search"><br>
+                    Nivel de estudios: <input type="text" list="estudios" required><br>
+                        <datalist id="estudios">
+                            <option label="Bach" value="Bachillerato o Preparatoria"></option>
+                            <option label="Lic" value="Licenciatura"></option>
+                            <option label="Ing" value="Ingenieria"></option>
+                            <option label="Mto" value="Maestria"></option>
+                            <option label="Dr" value="Doctorado"></option>
+                        </datalist>
+                    <input type="submit" value="Enviar">
+                </form>
+                
+            </article>
+            <article>
+                    <h3>Audio y Video</h3>
+                    <h4>Prueba de Audio</h4>
+                    <audio loop controls> 
+                        <source src="multimedia/son2.mp3" type="audio/mp3">
+                    </audio>
+                    <h4>Prueba de Video</h4>
+                    <video width="300" controls loop poster="images/poster.jpg">
+                        <source src="multimedia/video.mp4" type="video/mp4">
+                        <source src="multimedia/video.ogv" type="video/ogv">
+                        <source src="multimedia/video.webm" type="video/webm">
+                    </video>
+            </article>
+            <article>
+                    <h3>Formas Básicas con SVG </h3>
+                    <svg width="300" height="550" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="250" cy="290" rx="290" ry="100" fill="green"></ellipse>
+                        <line x1="50" y1="50" x2="300" y2="450" style="stroke:steelblue;stroke-width:5;"/>
+                        <circle cx="100" cy="150" r="80" fill="white"></circle>
+                        <rect width="200" height="100" fill="blue"/>
+                    </svg>
+            </article>
+            <article>
+                    <h3>SVG</h3>
+                    <h4>Video Enmascarado con SVG </h4>
+                    <video width="300" controls loop poster="images/poster.jpg" id="videoMask">
+                        <source src="multimedia/video.mp4" type="video/mp4">
+                        <source src="multimedia/video.ogv" type="video/ogv">
+                        <source src="multimedia/video.webm" type="video/webm">
+                    </video>
+                    <h4>SVG Animacion</h4>
+                    <video width="300" controls loop poster="images/poster.jpg" id="ellipseMask">
+                        <source src="multimedia/video.mp4" type="video/mp4">
+                        <source src="multimedia/video.ogv" type="video/ogv">
+                        <source src="multimedia/video.webm" type="video/webm">
+                    </video>                    
+            </article>
+            <article>
+                <h3>Canvas</h3>
+                <canvas width="300" height="550" id="lienzo"> 
+                    Este canvas no es visible para tu navegador, intenta en otro
+                </canvas>
+            </article>
+            <article>
+                <h3>Animación con canvas </h3>
+                <canvas width="300" height="550" id="miLienzo"> 
+                    Este canvas no es visible para tu navegador, intenta en otro
+                </canvas>
+            </article>
+            <article>
+                <h3>Almacenamiento local</h3>
+                <h4> Local Storage</h4>
+                    Ingresa un dato:_ <input type="text" id="datos" placeholder="Dato a guardar" autofocus></input><br>
+                    <input type="button" value="Guardar" onclick="almacena();"></input>
+                    <input type="button" value="Traer" onclick="obtiene();"></input>
+                    <input type="button" value="Borrar" onclick="borrar();"></input>
+
+                <h4> Session Storage</h4>
+                    Ingresa un dato:_ <input type="text" id="datos_session" placeholder="Dato a guardar" autofocus></input><br>
+                    <input type="button" value="Guardar" onclick="almacena_session();"></input>
+                    <input type="button" value="Traer" onclick="obtiene_session();"></input>
+                    <input type="button" value="Borrar" onclick="borrar_session();"></input>
+            </article>
+        </section>
+        <footer>
+            <h5 itemscope itemtype="https://schema.org/Person">Copyright 2019 by <span itemprop="givenName">Manuel Loaeza</span>, <span itemprop="jobTitle">Analista de Sistemas</span> en <span itemprop="worksFor"> Banco de México</span>, hermano del <span itemprop="parent">chuponcito</span></h5> <!-- ejemplo de microdato de persona ( schema.org)-->
+        </footer>
+    </body>
+</html>
