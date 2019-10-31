@@ -5,11 +5,17 @@ var h;
 probandoOrientacion();
 
 function probandoOrientacion(){
-    if()
+    if(!window.requestAnimationFrame){
+        window.requestAnimationFrame=(function(){
+            return window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function(callback, element){
+                window.setTimeout(callback,1000/60);
+            }
+        })();
+    }
 }
 
 function detonaEsfera(){
-    esfera.document.getElementById("esfera");
+    esfera=document.getElementById("esfera");
     w=innerWidth;
     h=innerHeight;
 
