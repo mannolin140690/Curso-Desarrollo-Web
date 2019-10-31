@@ -137,3 +137,69 @@ h4,p{
     -moz-mask:url(../images/elipse.svg);
     
 }
+
+#cuadroAnimado{
+    width:150px;
+    height:150px;
+    background-color: steelblue;
+    position: relative;
+    animation: miAnimacion 15s;
+    -webkit-animation: miAnimacion 15s;
+    -moz-animation: miAnimacion 15s;
+}
+
+@-webkit-keyframes miAnimacion{
+    0%{
+        background-color: steelblue;
+        left:0px;
+        top:0px;
+    }
+    15%{
+        background-color: blue;
+        left:250px;
+        top:0px;
+    }
+    45%{
+        background-color: yellow;
+        left:280px;
+        top:400px;
+    }
+    70%{
+        background-color: green;
+        transform:rotate(-360deg);
+    }
+    100%{
+        background-color: steelblue;
+        left:0px;
+        top:0px;
+        transform: skewX(50deg);
+    }
+}
+
+@-moz-keyframes miAnimacion{
+    0%{
+        color: steelblue;
+        left:0px;
+        top:0px;
+    }
+    15%{
+        color: blue;
+        left:250px;
+        top:0px;
+    }
+    45%{
+        color: yellow;
+        left:280px;
+        top:400px;
+    }
+    70%{
+        color: green;
+        transform:scale(1.5);
+    }
+    100%{
+        color: steelblue;
+        left:0px;
+        top:0px;
+        box-shadow:30px 30px 10px red;
+    }
+}
