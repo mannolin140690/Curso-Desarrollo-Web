@@ -68,7 +68,7 @@ function update(){
     esfera.style.height=mueveY*10 +"px";
     //esfera.style.boxShadow=mueveX+"px " +mueveY+"px 30px black";
 
-    esfera.style.transform= "scale(1,0.7)";
+    esfera.style.transform= "scale(2,2)";
     
     requestAnimationFrame(update);
 }

@@ -208,7 +208,7 @@ h4,p{
     position: absolute;
     width: 150px;
     height: 150px;
-    background-color: white;
+    background-color: black;
     border-radius: 50%;
     transition:all;
     -webkit-transition:all;
