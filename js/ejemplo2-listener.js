@@ -19,7 +19,7 @@ function detonaEsfera(){
     w=innerWidth;
     h=innerHeight;
 
-    esfera.style.left =(w/2) -50 +"px";
+    esfera.style.left =(w/2)-50 +"px";
     esfera.style.top =(h/2)-50 +"px";
 
     esfera.velocity={x:0, y:0};
@@ -62,7 +62,7 @@ function update(){
     }
 
     esfera.style.top=esfera.position.y+"px";
-    esfera.style.left=esfera.velocity.x+"px";
+    esfera.style.left=esfera.position.x+"px";
     
     requestAnimationFrame(update);
 }
