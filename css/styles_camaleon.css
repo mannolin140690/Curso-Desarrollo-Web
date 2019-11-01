@@ -34,9 +34,9 @@ body{
 
 @media screen and (min-width:481px) and (max-width:750px){
     html,body{
-        background-size:20% auto;
-        -webkit-background-size:20% auto;
-        -moz-background-size:20% auto;
+        background-size:40% auto;
+        -webkit-background-size:40% auto;
+        -moz-background-size:40% auto;
     }
 }
 
