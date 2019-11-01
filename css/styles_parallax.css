@@ -1,0 +1,63 @@
+ body, html{
+    height:100%;
+    margin:0px;
+    font-size:15px;
+    color:#777;
+}
+
+.fondoimg_1, .fondoimg_2, .fondoimg_3{
+    position: relative;
+    opacity: 0.65;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.fondoimg_1{
+    background-image: url('../images/parallax1.jpg');
+    min-height:100%;
+}
+.fondoimg_2{
+    background-image: url('../images/parallax2.jpg');
+    min-height:400px;
+}
+.fondoimg_3{
+    background-image: url('../images/parallax3.jpg');
+    min-height:100%;
+}
+
+.textoP{
+    position: absolute;
+    left:0px;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:black;
+}
+
+.textoP span.borderP{
+    background-color: #111;
+    color:white;
+    padding:18px;
+    font-size: 25px;
+}
+
+#contenedor1, #contenedor2,#contenedor3{
+    color:gray;
+    background-color: white;
+    text-align: center;
+    padding:50px 80px;
+}
+
+.cuadritos{
+    position:absolute;
+    background-color: gray;
+    left:50px;
+    width:150px;
+    height:150px;
+    margin:5px;
+    font-size:20px;
+    color:white;
+    z-index:1000000;
+}
