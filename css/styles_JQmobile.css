@@ -1,0 +1,13 @@
+
+
+.cuadritos{
+    position:absolute;
+    background-color: gray;
+    left:50px;
+    width:150px;
+    height:150px;
+    margin:5px;
+    font-size:20px;
+    color:white;
+    z-index:1000000;
+}

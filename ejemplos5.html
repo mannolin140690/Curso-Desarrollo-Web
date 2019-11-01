@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Jquery Mobile </title>
+        
+        <link rel="stylesheet" href="css/styles_JQmobile.css"> 
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+        <!-- JQuery Mobile-->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <script src="js/ejemplo4-listener.js"></script>
+    
+    </head>
+    <body">
+        <div data-role="page" id="pagina1">
+            <div data-role="header">
+                <h1>Capacidad de JqueryMobile</h1>
+            </div>
+            <div data-role="main">
+                <!-- <a href="#pagina2" data-role="button" data-transition="flow">Pagina 2</a>
+                <a href="#pagina3" data-role="button" data-transition="flow">Pagina 3</a> -->
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                        <ul>
+                            <li><a href="#pagina2" data-role="button" data-transition="slidedown" data-icon="grid"> Ir a página 2</a> </li>
+                            <li><a href="#pagina3" data-role="button" data-transition="slidedown" data-icon="grid"> Ir a página 3</a> </li>
+                            <li><a href="#pagina4" data-role="button" data-transition="slidedown" data-icon="grid"> Ir a página 4</a></li>
+                            <li><a href="#pagina5" data-role="button" data-transition="slidedown" data-icon="grid"> Ir a página 5</a></li>
+                        </ul>
+                </div>                
+            </div>
+        </div>
+
+        <div data-role="page" id="pagina2">
+                <div data-role="header">
+                    <h1>Page(2)</h1>
+                </div>
+                <div data-role="main">                       
+                        <div class="cuadritos">
+                                <p>Touch me!!!</p>
+                        </div>
+                </div>                
+                <div data-role="footer" data-position="fixed">
+                    <h4>Copyright 2019 by Manuel Loaeza</h4>
+                </div>
+        </div>
+
+        <div data-role="page" id="pagina3">
+                <div data-role="header">
+                    <h1>Page(3)</h1>
+                </div>
+                <div data-role="main">                       
+                       <div data-role="collapsibleset">
+                           <div data-role="collapsible">
+                                <h3>Seccion1</h3>
+                                <p>Contenido de Seccion1</p>
+                                <a href="#pagina1" data-role="button" data-transition="flip">Regresar Home</a>                                
+                           </div>  
+                           <div data-role="collapsible">
+                                <h3>Seccion2</h3>
+                                <p>Contenido de Seccion2</p>
+                                <form>
+                                    <fieldset data-role="controlgroup">
+                                        <input type="checkbox" id="check1">
+                                        <label for="check1">Uno</label>
+                                        <input type="checkbox" id="check2">
+                                        <label for="check2">Dos</label>
+                                    </fieldset>
+                                </form>
+                                <a href="#pagina1" data-role="button" data-transition="flip">Regresar Home</a>                                
+                           </div>
+                           <div data-role="collapsible">
+                                <h3>Seccion3</h3>
+                                <p>Contenido de Seccion3</p>
+                                <a href="#pagina1" data-role="button" data-transition="flip">Regresar Home</a>                                
+                           </div>                          
+                       </div>
+                </div>                
+                <div data-role="footer" data-position="fixed">
+                    <h4>Copyright 2019 by Manuel Loaeza</h4>
+                </div>
+        </div>
+
+        <div data-role="page" id="pagina4">
+                <div data-role="header">
+                    <h1>Page(4)</h1>
+                </div>
+                <div data-role="main">                       
+                    <div><a href="#elpanel" data-role="button" >Desplegar panel</a></div>
+
+                </div>                
+                <div data-role="footer" data-position="fixed">
+                    <h4>Copyright 2019 by Manuel Loaeza</h4>
+                </div>
+
+                <div id="elpanel" data-role="panel" data-position="left" data-display="overlay">
+                        <input id="filtrando" data-type="search">
+                        <ul data-role="listview" data-inset="true" data-filter="true" data-input="#filtrando">
+                            <li data-role="list-divider">Familiares:</li>
+                            <li>Kris</li>
+                            <li>Tocayo</li>
+                            <li>Kenai</li>
+                            <li>Manuel</li>
+                            <li data-role="list-divider">Paises:</li>
+                            <li>México</li>
+                            <li>Argentina</li>
+                            <li>Korea</li>
+                            <li>Marruecos</li>
+                            <li>
+                                <img src="images/camaleon.jpg">
+                                <h2>Título del elemento Camaleon></h2>
+                                <p>Info del camaleon</p>
+                            </li>
+                        </ul>
+                    </div>
+        </div>
+
+       
+
+    </body>
+</html>
