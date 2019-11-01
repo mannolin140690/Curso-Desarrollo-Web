@@ -1,0 +1,105 @@
+body{
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    background-image: url(../images/patron1.png),url(../images/patron1.png);  /* Multiples background solo en css3*/
+    background-color: white;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+ 
+}
+
+header{
+    width:900px;
+    height:190px;
+    color:white;
+    background-image: url(../images/banner01.jpg) ;
+    background-position: center;
+    background-size: 100%;
+}
+
+nav{
+    width:900px;
+    height: 50px;
+    background-color:rgba(255, 255, 255, 0.7);
+    padding-top: 5px;
+}
+
+nav ul li{
+    display:inline;
+    list-style-type: none;
+    margin-right: 60px;
+}
+
+aside{
+    width:230px;
+    background-color: #CECECE;
+    height:900px;
+    float:left;
+}
+
+section{
+    
+    width:670px;
+    height: auto;
+    float:left;
+    background-color: gray;
+}
+
+article{
+    height: 300px;
+    width:  600px;
+    background-color:rgba(91, 116, 169, 0.7);
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top:10px;
+    padding:5px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px; 
+}
+
+footer{
+
+    background-color: #FFF;
+    border-radius: 25px 0px 45px 0px;
+    width:900px;
+    height:20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;    
+    padding-bottom: 20px;
+}
+
+@font-face{
+    font-family: miFuente1;
+    src:url(../fonts/font1.ttf);    
+}
+@font-face{
+    font-family: miFuente2;
+    src:url(../fonts/font2.ttf);    
+}
+@font-face{
+    font-family: miFuente3;
+    src:url(../fonts/font3.ttf);    
+}
+@font-face{
+    font-family: miFuente4;
+    src:url(../fonts/font4.ttf);    
+}
+
+h1{
+    font-family: miFuente1;    
+    font-size: 70px; /*em en pixeles 1 em aprox 16 px*/ 
+}
+h2{
+    font-family: miFuente2;
+    font-size: 30px; 
+}
+h3{
+    font-family: miFuente3;
+    font-size: 30px; 
+}
+h4,p{
+    font-family: miFuente4;
+    font-size: 20px; 
+}

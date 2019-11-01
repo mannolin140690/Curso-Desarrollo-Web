@@ -1,0 +1,63 @@
+html, body{
+    height:100%;
+}
+
+html{
+    background: #000 url(../images/camaleon2.jpg) 50% 100% no-repeat;
+}
+
+
+body{
+    margin:0px;
+    padding:0px;
+    background: #000 url(../images/camaleon.jpg) 50% 100% no-repeat;
+    transition: opacity 2.5s;
+    -webkit-transition: opacity 2.5s;
+    -moz-transition: opacity 2.5s;
+}
+
+
+/*Media Query
+    POrtrait ->Vertical
+    Landscape -> Horizontal
+*/
+@media screen and  (orientation:portrait){
+    body{
+        opacity: 1;
+    }
+}
+@media screen and  (orientation:landscape){
+    body{
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:750px){
+    html,body{
+        background-size:20% auto;
+        -webkit-background-size:20% auto;
+        -moz-background-size:20% auto;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:480px){
+    body{
+        opacity:1;
+    }
+    html,body{
+        background-size:70% auto;
+        -webkit-background-size:70% auto;
+        -moz-background-size:70% auto;
+    }
+}
+
+@media screen and (min-width:751px) and (max-width:900px){
+    body{
+        opacity:0;
+    }
+    html,body{
+        background-size:50% auto;
+        -webkit-background-size:50% auto;
+        -moz-background-size:50% auto;
+    }
+}
