@@ -10,7 +10,6 @@ https://www.sencha.com/
 https://www.adobe.com/mx/creativecloud 
 https://tumult.com/hype/
 http://cheatsheetworld.com/programming/html5-canvas-cheat-sheet/
-
-
+https://developers.google.com/maps/documentation/javascript/tutorial
 https://d3js.org/
 

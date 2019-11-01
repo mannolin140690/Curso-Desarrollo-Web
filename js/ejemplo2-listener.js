@@ -64,8 +64,8 @@ function update(){
     esfera.style.top=esfera.position.y+"px";
     esfera.style.left=esfera.position.x+"px";
 
-    esfera.style.width=mueveX*10 +"px";
-    esfera.style.height=mueveY*10 +"px";
+    esfera.style.width=mueveX*30 +"px";
+    esfera.style.height=mueveY*30 +"px";
     //esfera.style.boxShadow=mueveX+"px " +mueveY+"px 30px black";
 
     esfera.style.transform= "scale(2,2)";
